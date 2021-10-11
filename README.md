@@ -17,7 +17,7 @@
 nerdctl run --rm \
   -v ${PWD}/data:/data \
   -v ${PWD}/rancher-rke2.repo:/etc/yum.repos.d/rancher-rke2.repo \
-  -e "REPO_NAME=rancher-rke2-common-latest,rancher-rke2-1-18-latest" \
+  -e "REPO_NAMES=rancher-rke2-common-latest,rancher-rke2-1-18-latest" \
   -t bgulla/reposync
 ```
 
